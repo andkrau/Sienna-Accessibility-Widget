@@ -4,7 +4,7 @@ import IToolConfig from "../types/IToolConfig";
 
 export const adjustLineHeightConfig: IToolConfig = {
     id: "line-height",
-    selector: `html`,
+    selector: `main p`,
     childrenSelector: ALL_SELECTOR,
     styles: {
         'line-height': '3'
