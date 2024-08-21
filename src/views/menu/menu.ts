@@ -49,7 +49,7 @@ export function renderMenu({
 
     $menu.querySelectorAll(".asw-adjust-font div[role='button']").forEach((el: HTMLElement) => {
         el.addEventListener("click", () => {
-            const margin = 0.1;
+            const margin = 0.05;
 
             let fontSize = getState("fontSize") ?? 1;
             if(el.classList.contains('asw-minus')) {
@@ -59,7 +59,7 @@ export function renderMenu({
             }
 
             fontSize = Math.max(fontSize, 0.1);
-            fontSize = Math.min(fontSize, 2);
+            fontSize = Math.min(fontSize, 1.5);
             fontSize = Number(fontSize.toFixed(2));
             
             adjustFontSize(fontSize || 1);
