@@ -1,4 +1,5 @@
 import { TEXT_SELECTORS } from "./Selectors";
+import { NODARK_SELECTORS } from "../enum/Selectors";
 import IToolConfig from "../types/IToolConfig";
 
 export interface IFilters {
@@ -8,11 +9,9 @@ export interface IFilters {
 export const FILTERS: IFilters = {
     'dark-contrast': {
         styles: {
-            'color': '#FFF',
-            'fill': '#FFF',
-            'background-color': '#000'
+            'filter': 'invert()'
         },
-        childrenSelector: TEXT_SELECTORS
+        childrenSelector: NODARK_SELECTORS
     },
     'light-contrast': {
         styles: {
