@@ -4,7 +4,7 @@ import IToolConfig from "../types/IToolConfig";
 
 export const adjustLetterSpacingConfig: IToolConfig = {
     id: "letter-spacing",
-    selector: `html`,
+    selector: `main p`,
     childrenSelector: ALL_SELECTOR,
     styles: {
         'letter-spacing': '2px'
